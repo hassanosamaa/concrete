@@ -1,0 +1,369 @@
+:root{
+    --primaryColor: #232764;
+    --secondaryColor:#3274aad8;
+    --secondaryColor_2:#25669c62;
+    --secondaryColor_0:#3274aa5e;
+    --back:transparent;
+    --words:rgba(0,0,0,0.9);
+    --shadow:white;
+    --opa:0.3;
+    --opa2:0.3;
+
+
+   
+
+}
+
+.dark{
+    --primaryColor:#ffbf00;
+    --secondaryColor:rgba(218, 182, 22, 0.075);
+    --secondaryColor_2:	#c09e364f;
+    --secondaryColor_0:#000000;
+    --back:#000000;
+    --words:rgba(255,255,255,0.8);
+    --shadow:black;
+    --opa:0.14;
+    --opa2:0.5;
+
+
+
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 1s ease-in;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    width: 100vw;
+
+    background-image:linear-gradient(var(--secondaryColor_0) , var(--back))
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'arial';
+   
+}   
+.Flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER */
+.HeaderBox{
+    width: 100%;
+    height: 15%;
+    justify-content: space-around;
+
+}
+
+.change{
+    width: 4%;
+    height: 55%;
+    border-radius: 40px;
+    color: var(--primaryColor);
+    cursor: pointer;
+    transition: all 1s ease;
+
+
+}.change2{
+    color: var(--primaryColor);
+
+
+}
+
+
+.logo{
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 2s ease;
+
+
+}
+.logo:hover{
+    transform: scale(1.1);
+
+}
+.logoo{ 
+     width: 60%;
+     height: 60%; 
+ } 
+.nav{
+    width: 60%;
+    list-style-type: none;
+    justify-content: space-around;
+    padding:20px 5px;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+
+    background-image:linear-gradient(var(--secondaryColor),transparent) ;
+
+}
+.Link{
+    font-size: 22px;
+    padding: 10px 20px;
+    margin-left:20px ;
+    border-radius: 10px;
+    text-decoration:none;
+    font-weight: 500;;
+    color:var(--words);
+    background-color: transparent;
+    text-shadow: 1px 1px 5px var(--shadow);
+    transform: scale(1);
+    border: 1px solid transparent;
+
+    transition: all 1s ease;
+
+}
+.Link:hover ,.active{
+    background-color: var(--secondaryColor_0);
+    border-radius: 10px;
+    border: 1px solid var(--primaryColor);
+}
+
+
+
+
+/* home */
+.Home{
+    position: relative;
+    width: 97%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px var(--secondaryColor_2) ;
+    height: 80%;
+    justify-content: center;
+    background-image:linear-gradient(var(--secondaryColor) , transparent 20%);
+    
+
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background: transparent url("logooo.png") no-repeat center fixed ;
+    background-size: 95% 90%;
+    opacity: var(--opa); 
+    margin: 30px;
+    
+}
+.left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+
+    /* visibility: hidden; */
+
+
+
+    
+}
+.leftimg1{
+    /* transform: translate(-100%); */
+    width: 60%;
+    height: 75%;
+    position: absolute;
+    top:10%;
+    left: 40%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+
+
+    
+
+}
+.leftimg{
+    /* opacity: 0; */
+    /* transform: translate(-100%); */
+    width: 50%;
+    height: 55%;
+    position: absolute;
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+   overflow: hidden;
+    top:20%;
+    left: 20%;
+    position: relative;
+    transition: all 2s ease;
+
+   
+}
+.leftimgs{
+    width: 100%;
+    height: 100%;
+    background: transparent url("1.png") no-repeat center ;
+    background-size: cover;
+    transition: all 2s ease;
+    opacity: 1;
+
+
+
+}
+.leftimgsc{
+    position: absolute;
+    top:0px;
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, var(--opa2));
+    transition: all 1s ease;
+
+    
+}
+
+.leftimgsc1{
+    position: absolute;
+    top:0px;
+
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0,var(--opa2));
+    transition: all 1s ease;
+
+    
+}
+
+.leftimgs1{
+    width: 100%;
+    height: 100%;
+    background: transparent url("6.jpg") no-repeat center ;
+    background-size: cover;
+    opacity: 1;
+}
+
+
+
+
+
+
+.leftimgsc:hover{
+    background-color:rgba(0, 0, 0, 0.2);
+
+}
+.leftimgsc1:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+
+}
+.leftimg:hover{
+    z-index: 2;
+}
+.leftimg1:hover{
+    z-index: 2;
+
+}
+
+.right{
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2%;
+    transform: rotateY(0deg);
+    transition: all 4s ease;
+    align-items: self-start;
+    
+}
+
+
+
+.top{
+    direction: rtl;
+    margin-top: -5%;
+    font-size: 95px;
+    font-weight: bold;
+    color: #25679c;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 6px #25679c;
+    background-color: transparent;
+
+
+}
+.bottom{
+    direction: rtl;
+    background-color: transparent;
+
+    letter-spacing: 6px;
+    margin-top: -20px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #232764d2;
+    text-shadow: 1px 1px 4px #232764;
+
+
+
+}
+.icons{
+    direction: rtl;
+    margin-top: 10px;
+    background-color: transparent;
+}
+.fa{padding: 20px 20px;
+        background-color: transparent;
+
+    color:#232764;
+    transition: all 1s ease;
+    cursor: pointer;}
+
+
+
+.fa:hover{transform: scale(1.4)}
+.wat{
+    transform: scale(1);
+    color:#22801e;
+    background-color: transparent;
+
+    transition: all 1s ease;
+    cursor: pointer;}
+
+.wat:hover{transform: scale(1.4)}
+.tel{
+    padding: 20px 20px;
+    transform: scale(1);
+    color:#2151a5;
+    background-color: transparent;
+
+    transition: all 1s ease;
+    cursor: pointer;}
+
+.tel:hover{transform: scale(1.4)}
+
+.pra1,.pra2{
+    width: 75%;
+    font-weight: 500;
+    direction: rtl;
+    font-size: 22px;
+    color:var(--words);
+    text-shadow: 1px 1px 5px var(--shadow);
+    padding-right: 30px;
+    background: transparent;
+
+    
+}
+.pra1{margin-top: 5%;}
+.pra2{margin-top: -2%;}
+
+/* footer */
+
+
+
+
+
+
+
+
+
