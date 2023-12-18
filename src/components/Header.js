@@ -21,20 +21,20 @@ export default function Header(){
 
 
             <ul className="nav Flex" >
-                <li> <Link className="Link">المحاضرين</Link></li>
-                <li> <Link className="Link">الأقسام</Link></li>
-                <li> <Link className="Link">الكورسات المتاحة</Link></li>
-                <li> <Link  className="Link active">الصفحة الشخصية</Link></li>
+                <li> <Link to={"/engineers"} className="Link">المحاضرين</Link></li>
+                <li> <Link to={"/courses"} className="Link">الكورسات المتاحة</Link></li>
+                <li> <Link to={"/"} className="Link active">الصفحة الشخصية</Link></li>
                 
             </ul>
 
             <div className="logo Flex">
-                
+                <a href="#home">
                 <img src={require("../logooo.png")}
                 alt="logo"
                 className="logoo "
                 
                 />
+                </a>
             </div>
         </div>
     )

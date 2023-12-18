@@ -1,22 +1,14 @@
+import Eng from "../Eng/Eng";
+import Services from "../Services/Services";
+
 export default function Home(){
     return(
-        <div className="Home Flex">
+        <>
+        <div id="home" className="App">
+        <div  className=" Home Flex">
 
             <div className="back"></div>
-            <div className="left ">
-
-                <div className="leftimg1">
-                    <div className="leftimgs1"></div>
-                    <div className="leftimgsc1"></div>
-
-                </div>
-                <div className="leftimg">
-                    <div className="leftimgs"></div>
-                    <div className="leftimgsc"></div>
-                </div>
             
-                
-            </div>
 
             <div className="right Flex">
                 <p className="top">CONCRETE</p>
@@ -33,7 +25,28 @@ export default function Home(){
                 </div>
             </div>
             
+
+            <div className="left ">
+
+                <div className="leftimg1">
+                    <div className="leftimgs1"></div>
+                    <div className="leftimgsc1"></div>
+
+                </div>
+                <div className="leftimg">
+                    <div className="leftimgs"></div>
+                    <div className="leftimgsc"></div>
+                </div>
+            
+                
+            </div>
             
         </div>
+
+        </div>
+        <Services/>
+        <Eng/>
+        </>    
+
     )
 }
