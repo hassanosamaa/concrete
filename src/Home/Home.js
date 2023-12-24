@@ -1,11 +1,12 @@
 import Eng from "../Eng/Eng";
 import Services from "../Services/Services";
+import Myeng from "./Myeng";
+import Myservices from "./Myservices";
 
 export default function Home(){
     return(
-        <>
-        <div id="home" className="App">
-        <div  className=" Home Flex">
+        <div className="APPhome">
+        <div id="home" className=" Home Flex">
 
             <div className="back"></div>
             
@@ -18,11 +19,7 @@ export default function Home(){
                 <p className="pra2">والحصول على فيديوهات مسجلة تستطيع مشاهدتها في أي وقت
 على اللاب توب أو تطبيق الهاتف بدون الحاجة لإنترنت</p>
 
-                <div className="icons">
-                <a href="https://www.facebook.com/CivilCoursesEngineering"><i className="fa fa-brands fa-facebook fa-2xl"></i></a>
-                <a href="https://wa.me/message/HKKYFIBQALB3N1"><i className="wat fa-brands fa-whatsapp fa-2xl"></i></a>
-                <a href="https://t.me/Concrete_Academy"><i className=" tel fa-brands fa-telegram fa-2xl"></i></a>
-                </div>
+                <a href="#footer"><button >اشترك الان</button></a>
             </div>
             
 
@@ -41,12 +38,16 @@ export default function Home(){
                 
             </div>
             
+        
+
+        
+        
         </div>
 
-        </div>
-        <Services/>
-        <Eng/>
-        </>    
+
+        <Myservices/>
+        <Myeng/>  
+        </div>    
 
     )
 }

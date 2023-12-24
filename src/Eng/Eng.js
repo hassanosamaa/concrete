@@ -4,10 +4,14 @@ import Engsocial from "./Engsocial";
 
 export default function Eng(){
 
-        const data_engsocial=data_card.map((el)=>(
-            <Engsocial image={el.image_}
+        const data_engsocial=data_card.map((el,i)=>(
+            <Engsocial 
+            key={i}
+            id={el.id_}
+            image={el.image_}
             nameEngineer={el.nameEngineer_}
             univercity={el.univercity_}/>
+            
         ))
     return(
         

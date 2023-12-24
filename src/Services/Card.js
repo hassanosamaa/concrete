@@ -16,6 +16,7 @@ export default function Card (props){
     element.addEventListener('click', (eo)=>{
         var id_value=element.getAttribute("id");
         data_card[0].ID=id_value;
+        console.log(id_value)
 
 
     });
@@ -25,7 +26,9 @@ export default function Card (props){
   
 
     return(
-        <Link id={props.id} ref={ref} to={"/courses/content"} className="card" 
+
+        <Link id={props.id} ref={ref} 
+        to={"/courses/content"} className="card" 
           >
             
             <img className="topcard" src={props.image}/>

@@ -22,7 +22,7 @@ export default function Services(){
             <div className="back2"></div>
 
             <div className="courses_top">
-                <h1>Course</h1>
+                <p>الكورسات</p>
             </div>
             <div className="courses_bottom">
                 {datacard}
